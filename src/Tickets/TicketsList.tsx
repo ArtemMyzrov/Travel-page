@@ -39,7 +39,7 @@ const TicketsList: React.FC<TicketsListProps> = ({ tickets }) => {
                     <Row align="middle" gutter={[16, 16]}>
                         <Col span={6} style={{ textAlign: "center", marginRight: '20px' }}>
                             <img
-                                src="/Turkish_Airlines_logo.svg"
+                                src="./Turkish_Airlines_logo.svg"
                                 alt="Airline logo"
                                 className={styles.cardLogo}
                             />
