@@ -1,0 +1,30 @@
+.currencySelector {
+  margin-bottom: 16px;
+}
+
+.divider {
+  margin: 16px 0;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.checkboxGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.checkboxItem {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+}
+
+.onlyText {
+  color: #1890ff;
+  cursor: pointer;
+}

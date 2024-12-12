@@ -1,0 +1,81 @@
+.card {
+  margin-bottom: 20px;
+}
+
+.cardLogo {
+  width: 240px;
+  margin-bottom: 10px;
+}
+
+.cardButton {
+  width: 100%;
+  background-color: orange;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  height: 50px;
+  display: flex;
+  padding: 28px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardButtonSpan {
+  display: block;
+  font-size: 14px;
+}
+.divider {
+  height: 150px;
+  margin-right: 100px;
+}
+
+.dividerVertical {
+  height: 100%;
+  background-color: #ddd;
+}
+
+.departureTime {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.departureInfo {
+  font-size: 16px;
+  color: #555;
+}
+
+.departureDate {
+  font-size: 14px;
+  color: #888;
+}
+
+.stopsInfo {
+  text-align: center;
+}
+
+.stopsText {
+  font-size: 14px;
+  color: #555;
+}
+
+.arrow {
+  color: #aaa;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.arrivalTime {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.arrivalInfo {
+  font-size: 16px;
+  color: #555;
+}
+
+.arrivalDate {
+  font-size: 14px;
+  color: #888;
+}
