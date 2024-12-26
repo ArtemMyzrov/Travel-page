@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import { Checkbox, Divider } from "antd"
 import type { CheckboxChangeEvent } from 'antd/es/checkbox'
 import CurrencySelector from "./CurrencySelector"
@@ -13,14 +13,6 @@ const Filters: React.FC<FiltersProps> = ({ onFilterChange }) => {
     const [selectedStops, setSelectedStops] = useState<number[]>([0])
     const [selectAllChecked, setSelectAllChecked] = useState(false)
     const [hoveredStop, setHoveredStop] = useState<number | null>(null)
-
-    useEffect(() => {
-        if (selectedStops.length === 0) {
-            onFilterChange([])
-        } else {
-            onFilterChange(selectedStops)
-        }
-    }, [selectedStops, onFilterChange])
 
     const handleSelectAllChange = (e: CheckboxChangeEvent) => {
         const isChecked = e.target.checked
@@ -41,6 +33,14 @@ const Filters: React.FC<FiltersProps> = ({ onFilterChange }) => {
         setSelectedStops([value])
         setSelectAllChecked(false)
     }
+
+    const applyFilter = () => {
+        onFilterChange(selectedStops)
+    }
+
+    useEffect(() => {
+        applyFilter()
+    }, [selectedStops])
 
     return (
         <>
